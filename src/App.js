@@ -34,7 +34,9 @@ function App() {
   return (
     <div className="App">
       <div className='container-calculator'>
-        <Monitor input={input} />
+        <div className='monitor'>
+          <Monitor input={input} />
+        </div>
         <div className='line'>
           <Button useClick={addInput}>7</Button>
           <Button useClick={addInput}>8</Button>
@@ -64,6 +66,9 @@ function App() {
           <Clear error={inputError} useClick={clearClear}>Clear</Clear>
         </div>
       </div>
+
+      <footer>GTIHUB @KaimDev</footer>
+
     </div>
   );
 }

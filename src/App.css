@@ -56,3 +56,14 @@
   }
 
 }
+
+
+footer{
+  font-family: sans-serif;
+  display: flex;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  bottom: 10%;
+}
