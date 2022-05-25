@@ -1,5 +1,4 @@
 import './App.css';
-import FreeCodeCampLogo from './img/FreeCodeCamp_logo.png'
 import Button from './components/button'
 import Monitor from './components/monitor';
 import Clear from './components/clear';
@@ -15,20 +14,31 @@ function App() {
     setInput(input + val);
   };
 
+  function syntaxis(){
+    setInput('Syntaxis Error');
+    setInputError(true)
+  };
   
   const calculatorValue = () => {
     if(input) {
-      setInput(evaluate(input));
+      try{
+        setInput(evaluate(input));
+
+      }catch{syntaxis()};
     }else{
       setInput('Ingrese un numero');
       setInputError(true);
     }
-  }
+  };
 
   function clearClear() {
     setInput('');
     setInputError(false);
-  }
+  };
+
+  function del () {
+    setInput(input.substring(0, input.length - 1));
+  };
 
 
   return (
@@ -63,11 +73,14 @@ function App() {
         </div>
         <div className='line'>
           <Button useClick={calculatorValue}>=</Button>
+          <Button useClick={del}>delete</Button>
+        </div>
+        <div className='line'>
           <Clear error={inputError} useClick={clearClear}>Clear</Clear>
         </div>
       </div>
 
-      <footer>GTIHUB @KaimDev</footer>
+      <footer>GITHUB @KaimDev</footer>
 
     </div>
   );
