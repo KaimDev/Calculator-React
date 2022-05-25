@@ -2,6 +2,9 @@
 
 This program is a basic calculator created whit react.
 
+
+This project was inspired by the freecodecamp platform and developed by me, adding new features, such as new buttons and application support against possible errors.
+
 > This project is purely educational.
 
 ![enter image description here](https://cdn.discordapp.com/attachments/858182079296831518/979153667909382144/unknown.png)
