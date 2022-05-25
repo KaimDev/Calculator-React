@@ -24,4 +24,4 @@ You may also see any lint errors in the console.
 
 ## Create by
 
-KaimDev
+- [@KaimDev](https://www.github.com/KaimDev) Johan P.
