@@ -1,4 +1,4 @@
-# About this proyect
+# About this project
 
 This program is a basic calculator created whit react.
 
